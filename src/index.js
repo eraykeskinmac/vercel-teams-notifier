@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = 3000;
-const TEAMS_WEBHOOK_URL = "https://oplog.webhook.office.com/webhookb2/c57c5dd1-678c-48a3-a470-e7bbbe845199@6a11f161-dc77-42b2-ba0a-26b6aff4adf0/IncomingWebhook/204f0570f30842958b2065c168e6457f/34fb4abf-89ff-4673-b62f-4150ff2bc60f"; 
+const TEAMS_WEBHOOK_URL = process.env.TEAMS_WEBHOOK_URL
 
 app.use(bodyParser.json());
 
